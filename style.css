@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+    background-color: rgb(183, 61, 110);
+    min-height: 100vh;
+    width: 100%;
+}
+.todo-app{
+    width: 100%;
+    margin: 100PX auto 20px;
+    max-width: 540px;
+    background: white;
+    border-radius: 10PX;
+    padding: 40px 30px 70px;
+
+}
+.todo-app h1{
+color: brown;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+.row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgb(238, 232, 228);
+border-radius: 30px;
+padding-left: 20PX;
+margin-bottom: 25PX;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10PX;
+}
+button{
+    border: none;
+    outline: none;
+    color: rgb(18, 16, 15);
+    font-size: 16PX;
+    border-radius:40PX ;
+    padding: 16PX 50PX;
+    background: rgb(245, 37, 89);
+    cursor:pointer ;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    border-radius: 50%;
+    top:12px ;
+    left: 8px;
+    background-position: center;
+    background-size: cover;
+}
